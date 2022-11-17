@@ -1,0 +1,202 @@
+@font-face
+{
+    font-family: "Mulish-Regular";
+    font-display: swap;
+    src: url("Mulish-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+*, *:before, *:after
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html
+{
+    height: 100%;
+    font-family: "Mulish-Regular", Helvetica, Impact, sanf-serif;
+}
+h1
+{
+    margin-bottom: -5px;
+}
+a
+{
+    text-decoration: none;
+}
+.leftShift
+{
+    padding-left: 30px;
+}
+a, p
+{
+    padding: 0.5% 0 0 0;
+}
+details
+{
+    padding: 10px 0 0 0;
+}
+#badges
+{
+    padding-top:0.5%;
+}
+.badge
+{
+    width: 5%;
+    height: auto;
+    margin-right: 0.5%;
+}
+.mail
+{
+    display: flex;
+    justify-content: start;
+}
+details:focus,summary:focus
+{
+  outline: 0;
+  outline: none;
+}
+.logo
+{
+    width: 100%;
+    height: auto;
+}
+img
+{
+    border-radius: 50%;
+}
+header>div, main>div, footer>div
+{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+.headerImg
+{
+    float:left;
+    width: 15%;
+    margin-right: 1%;
+}
+header, main, footer
+{
+    padding-bottom:1%;
+}
+html
+{
+    background-color: #0f0e0e;
+    color: #ffffff;
+}
+a
+{
+    color: #ff78b0;
+}
+a:hover
+{
+    color: #ffffff;
+    transition: all 0.5s ease 0s;
+}
+header
+{
+    background-color: #0f0e0e;
+}
+main
+{
+    background-color: #1a1a1a;
+}
+footer
+{
+    background-color: #0f0e0e;
+}
+h1, span, h2
+{
+    color:#ffed29;
+}
+.langBlock
+{
+    background-color:#ff78b0;
+    color: #ffffff;
+}
+.langBlock:hover
+{
+    background-color:#ffffff;
+    color: #ff78b0;
+    transition: all 0.5s ease 0s;
+}
+*::selection
+{
+	background: #ffed29;
+	color: #0f0e0e;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary 
+{
+	display:inline-block;
+	padding: .3em .6em .3em 1.5em;
+	cursor: pointer;
+	position: relative;
+	font-weight: bold;
+}
+summary:before 
+{  
+	left: .3em;
+	top: .4em;
+	background: url("row.png") no-repeat 50% 50% / 1em 1em;
+	width: 1em;
+	height: 1em;  
+	content: "";
+	position: absolute;
+	transition: transform .5s;
+}
+details[open] > summary:before 
+{
+	transform: rotateZ(90deg);
+}
+summary ~ * 
+{
+	padding:0 0 0 0;
+}
+details[open] summary ~ *
+{ 
+	animation: sweep .5s ease-in-out;
+}
+@keyframes sweep 
+{
+	0%    {opacity: 0;}
+	100%  {opacity: 1;}
+}
+details
+{
+	display:block;
+}
+ul 
+{
+	list-style: none;
+}
+ul li::before 
+{
+	content: "\2022";  
+	color: #ffed29;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+}
+ul li
+{
+    margin-left: 2%;
+}
+@media (max-width: 768px)
+{
+    .headerImg{width: 100%}
+    .badge{width: 25%}
+}
+.langBlock
+{
+    position:fixed;
+    right: 0;
+    top: 0;
+    padding:0.5%;
+}

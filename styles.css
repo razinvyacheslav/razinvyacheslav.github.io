@@ -212,6 +212,12 @@ ul li
     display: flex;
     flex-direction: column;
 }
+.langBlock
+{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5%;
+}
 @media (max-width: 768px)
 {
     .headerImg{width: 100%}
@@ -221,6 +227,7 @@ ul li
     a, p{padding-top:2%;}
     .mainDesc p:last-child, .mainDesc {padding-top:4%;}
     h3{padding-top:1%;}
+    .langBlock{padding: 3%;}
 }
 .badge:hover
 {
